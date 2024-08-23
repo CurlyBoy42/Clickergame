@@ -1,0 +1,93 @@
+<style>
+    body {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background: url('https://cdn.pixabay.com/photo/2016/11/29/04/23/forest-1869741_960_720.jpg') no-repeat center center fixed;
+        background-size: cover; 
+        font-family: 'Arial', sans-serif;
+        color: #fff;
+        margin: 0;
+        overflow: hidden;
+    }
+    
+</style>
+
+
+    .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    #shop, #helpers {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        width: 200px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+
+    #shop {
+        left: 10px;
+    }
+
+    #helpers {
+        right: 10px;
+    }
+
+    #clickButton {
+        padding: 20px;
+        font-size: 24px;
+        background-color: #ff5722;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        position: relative; 
+        z-index: 2;
+    }
+
+    #score {
+        margin: 20px;
+        font-size: 32px;
+    }
+
+    .main-content {
+        text-align: center;
+        z-index: 2;
+    }
+
+    .main-content > * {
+        margin: 5px;
+    }
+
+    #mushroomContainer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+    }
+
+    .mushroom {
+        position: absolute;
+        width: 50px;
+        opacity: 0.8;
+        animation: fall linear forwards;
+    }
+
+    @keyframes fall {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(100vh
